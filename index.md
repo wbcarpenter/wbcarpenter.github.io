@@ -17,12 +17,12 @@ Programming Projects
 ![Project 2 Thumbnail Name](images/dummy_thumbnail.jpg)
 
 ---
-### [Single Cycle Processor | CSCI 330](project1)
+### [Single Cycle Processor | CSCI 330](SCP)
 
 ![Project 3 Thumbnail Name](images/dummy_thumbnail.jpg)
 
 ---
-### [DreamBuy | CSCI 540](project1)
+### [SecurePass | CSCI 499](SecurePass)
 
 ![Project 4 Thumbnail Name](images/dummy_thumbnail.jpg)
 
