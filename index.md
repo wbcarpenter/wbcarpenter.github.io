@@ -7,6 +7,23 @@ Programming Projects
 *For access to my private project repositories, please [email me](mailto:example@csustudent.net?subject=GitHub%20Access) with the subject line, GitHub Access.
 
 ---
+### [SecurePass Honors Senior Project | CSCI 499](SecurePass)
+
+![SecurePass](images/dummy_thumbnail.jpg)
+
+---
+
+### [Single Cycle Processor | CSCI 330](SCP)
+
+![Project 3 Thumbnail Name](images/dummy_thumbnail.jpg)
+
+---
+### [Testing of an OpenSource GitHub Project | CSCI 540](dreambuyTest)
+
+![DreamBuy](images/DreamBuyUI.png)
+
+---
+
 ### [Project 1 Title | CSCI 301](project1)
 
 ![Project 1 Thumbnail Name](images/dummy_thumbnail.jpg)
@@ -15,16 +32,6 @@ Programming Projects
 ### [Project 2 Title | CSCI 315](project1)
 
 ![Project 2 Thumbnail Name](images/dummy_thumbnail.jpg)
-
----
-### [Single Cycle Processor | CSCI 330](SCP)
-
-![Project 3 Thumbnail Name](images/dummy_thumbnail.jpg)
-
----
-### [SecurePass | CSCI 499](SecurePass)
-
-![Project 4 Thumbnail Name](images/dummy_thumbnail.jpg)
 
 ---
 
