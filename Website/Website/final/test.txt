@@ -1,0 +1,5 @@
+This is a test file.
+It is being sent over UDP from the client to the server.
+This verifies that chunked transmission and writing to outpur.txt works correctly.
+1234567890
+ABCDEFGHIJKLMNOPQQQRSTUVWXYZ

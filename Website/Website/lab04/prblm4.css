@@ -1,0 +1,21 @@
+ol.outer {
+    list-style-type: upper-roman;
+    font-weight: bold;
+}
+ol.middle {
+    list-style-type: upper-alpha;
+    margin-left: 30px;
+}
+ol.inner {
+    list-style-type: decimal;
+    margin-left: 50px;
+}
+li.compact {
+    background-color: pink;
+}
+li.midsize {
+    background-color: lightblue;
+}
+li.sports {
+    background-color: lightgreen;
+}

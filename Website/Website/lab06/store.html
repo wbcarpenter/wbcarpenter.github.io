@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI Storefront</title>
+</head>
+<body>
+    <h1>CSCI Online Store</h1>
+
+    <form action="invoice.php" method="post">
+        <table>
+            <tr>
+                <td>
+                    <img src="desktop.jpeg" height="300"><br>
+                    <input type="checkbox" name="items[]" value="desktop">$1234
+                </td>
+                <td>
+                    <img src="laptop.jpeg" height="300"><br>
+                    <input type="checkbox" name="items[]" value="laptop">$2345
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="hdd.jpeg" height="300"><br>
+                    <input type="checkbox" name="items[]" value="hdd">$246
+                </td>
+                <td>
+                    <img src="ram.jpeg" height="300"><br>
+                    <input type="checkbox" name="items[]" value="ram">$79
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Checkout">
+    </form>
+
+    <br>
+    <a href="index.html">Return to Home</a>
+</body>
+</html>

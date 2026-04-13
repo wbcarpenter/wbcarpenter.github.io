@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 5</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Home</a> |
+            <a href="/lab01/index.html">Lab 1</a> |
+            <a href="/lab02/index.html">Lab 2</a> |
+            <a href="/lab03/index.html">Lab 3</a> |
+            <a href="/lab04/index.html">Lab 4</a> |
+            <a href="/lab05/index.html">Lab 5</a> |
+            <a href="/lab06/index.html">Lab 6</a> |
+            <a href="/lab07/index.html">Lab 7</a> |
+            <a href="/lab08/index.html">Lab 8</a> |
+            <a href="/family/index.html">Family</a> |
+            <a href="/gallery/index.html">Gallery</a> |
+            <a href="/video/index.html">Video</a>
+        </nav>
+
+    </header>
+
+    <h1>Constructing a LAN Using One Router</h1>
+    <h3>LAN Setup:</h3>
+    <p>To set up an LAN, we each needed a computer, ethernet cable, and an ethernet adapter, along with one router with its modem cable.  We started by connecting our computers to the router with our ethernet cables, and plugging the modem cable in.  We went through the document configuration and IP assignment process (which I explain more below), then made sure to switch both are computers to the local network.</p><br/>
+    <img src="/lab05/LANsetup.jpeg" alt="LAN setup"><br/>
+    <p>We were both able to browse each other's Samba shares once we were both connected to the LAN.  I included that screenshot here:</p><br/>
+    <img src="/lab05/partnerConnection.png" alt="Partner Connection"><br/>
+
+    <h3>TCP/IP Configuration:</h3>
+    <p>After resetting the router, we were able to access the router's configuration web pages.  We then selected a new IP range; group 2, 192.168.101.0-1.92.168.101.255.</p><br/>
+    <img src="/lab05/network.png" alt="Network"><br/>
+
+    <h3>Data Transmission Experiment:</h3>
+    <p>Once we both had acces to the shared public folder, we went through the process of transferring a file.  We each created a 4GB dummy file and dropped it into the shared folder.  Mine successfully shared, but Annaliese's did not.  We spent time trying to figure out why, and I finally realized that she had entered a different path in the smb.conf file than what it should have been.  Once that issue was fixed, she was able to transfer the file to me.  The transfer took 15 minutes for both of us.  Below are our transmission rates on the System Monitor.</p><br/>
+    <img src="/lab05/dataTransmission.png" alt="My Transmission"><br/>
+    <img src="/lab05/AnnaTransmission.png" alt="Anneliese's Transmission"><br/>
+    <p>Here is a screenshot of the file inside the shared folder:</p>
+    <img src="/lab05/transferredFile.png" alt="Transferred File">
+    <h3>Experiment Results Table:</h3>
+    <table border="1">
+        <tr>
+            <td>User Transfer Rate</td>
+            <td>Receiving</td>
+            <td>Sending</td>
+        </tr>
+        <tr>
+            <td>Anneliese</td>
+            <td>4.6 MBps</td>
+            <td>5.4 MBps</td>
+        </tr>
+        <tr>
+            <td>Whitney</td>
+            <td>5.8 MBps</td>
+            <td>20.4 KBps</td>
+        </tr>
+    </table><br/>
+
+    <a href="/lab05/index.html">Back to Table of Contents</a>
+</body>
+</html>

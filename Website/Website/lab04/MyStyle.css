@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+#menu ul {
+    background-color: black;
+    color: white;
+    display: block;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0px;
+}
+#menu li {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin: 20px;
+}
+#menu li:hover {background-color:rgb(90, 88, 88);}
+#menu ul li ul {
+    display: none;
+}
+#menu li:hover #sm1 {
+    display: block;
+    position: absolute;
+    left: 100px;
+}
+#menu li:hover ul li {
+    display: block;
+}
