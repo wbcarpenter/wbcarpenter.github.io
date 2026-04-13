@@ -13,9 +13,15 @@ Programming Projects
 
 ---
 
-### [Single Cycle Processor | CSCI 330](SCP)
+### [TOCTOU Attack | CSCI 452](project1)
 
-![Project 3 Thumbnail Name](images/dummy_thumbnail.jpg)
+![Project 1 Thumbnail Name](images/dummy_thumbnail.jpg)
+
+---
+
+### [Applied Networking Website | CSCI 332](project1)
+
+![Project 2 Thumbnail Name](images/dummy_thumbnail.jpg)
 
 ---
 ### [Testing of an OpenSource GitHub Project | CSCI 540](dreambuyTest)
@@ -24,14 +30,9 @@ Programming Projects
 
 ---
 
-### [Project 1 Title | CSCI 315](project1)
+### [Single Cycle Processor | CSCI 330](SCP)
 
-![Project 1 Thumbnail Name](images/dummy_thumbnail.jpg)
-
----
-### [Project 2 Title | CSCI 301](project1)
-
-![Project 2 Thumbnail Name](images/dummy_thumbnail.jpg)
+![Project 3 Thumbnail Name](images/dummy_thumbnail.jpg)
 
 ---
 
