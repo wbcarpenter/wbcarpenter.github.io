@@ -472,7 +472,17 @@ Though this was a challenge to figure out the best plan of action to have optima
 
 As part of this honors project, SecurePass was prepared for deployment to the Chrome Web Store. This required packaging the extension, adhering to Chrome’s Manifest V3 requirements, and ensuring compliance with security and privacy policies.
 
-The deployment process introduced additional challenges, including validation requirements, permission restrictions, and ensuring that no sensitive data was transmitted. Successfully preparing the extension for deployment demonstrates that SecurePass meets real-world application standards beyond a typical classroom project and fulfills the expectations of an Honors-level implementation.  
+The deployment process introduced additional challenges, including validation requirements, permission restrictions, and ensuring that no sensitive data was transmitted. The extension was rejected for publication twice during this process, as shown in the figures below. This was due to unused or unecessary permissions. Although being rejected twice by the Chrome Web Store was frustrating, it taught me a lot about the importance of minimizing permissions and clearly justifying functionality. This process strengthened both my technical implementation and my understanding of real-world software review standards.
+
+![First Rejection](images/Rejection1.png)  
+
+*Fig 4. The first rejection was due to the scripting permission.*  
+
+![Second Rejection](images/Rejection2.png)  
+
+*Fig 4. The second rejection was due to the activeTab permission.*  
+
+Successfully preparing the extension for deployment demonstrates that SecurePass meets real-world application standards beyond a typical classroom project and fulfills the expectations of an Honors-level implementation.  
 
 ### Flexible UI
 
@@ -497,4 +507,4 @@ Overall, these enhancements would build upon the existing foundation of SecurePa
 
 The presentation slides used for the project defense are attached separately.
 
-[Download Presentation Slides](./SecurePassPresentation.pptx)
+[Download Presentation Slides](pdf/SecurePassPresentation.pdf)
