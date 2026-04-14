@@ -9,17 +9,18 @@ Programming Projects
 ---
 ### [SecurePass Honors Senior Project | CSCI 499](SecurePass.md)
 
-![SecurePass](images/dummy_thumbnail.jpg)
+![SecurePass Login Field](images/PasswordField.png)  
+![SecurePass Login Field](images/Entropy.png)
 
 ---
 
-### [TOCTOU Attack | CSCI 452](project1)
+### [TOCTOU Attack | CSCI 452](TOCTOUattack.md)
 
 ![Project 1 Thumbnail Name](images/dummy_thumbnail.jpg)
 
 ---
 
-### [Applied Networking Website | CSCI 332](project1)
+### [Applied Networking Website | CSCI 332](AppNetWebsite.md)
 
 ![Project 2 Thumbnail Name](images/dummy_thumbnail.jpg)
 
