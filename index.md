@@ -22,7 +22,7 @@ Programming Projects
 
 ### [Applied Networking Website | CSCI 332](AppNetWebsite.md)
 
-![Project 2 Thumbnail Name](images/dummy_thumbnail.jpg)
+![Whitney's Website Home Page](images/Website.png)
 
 ---
 ### [Testing of an OpenSource GitHub Project | CSCI 540](dreamBuyTest.md)

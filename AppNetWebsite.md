@@ -11,82 +11,54 @@ Creation of a Website that includes information about me and several labs from t
 
 ## Project description
 
+This project focused on designing and developing a multi-page website using HTML and CSS, with an emphasis on building a strong foundation in front-end web development. The primary objective was to learn how to structure content effectively with HTML and apply styling through CSS to create a clean, consistent, and user-friendly interface.
 
+Throughout the project, I implemented core web design principles such as page layout, navigation structure, spacing, and visual consistency. Special attention was given to organizing content in a logical way and ensuring that all pages maintained a cohesive look and feel. The use of CSS allowed for reusable styling across the site, improving both efficiency and maintainability.
+
+In addition to front-end development, the website also includes several lab components that introduce basic PHP functionality. However, the main focus of the project was developing a solid understanding of how HTML and CSS work together to create responsive and well-structured web pages.  
 
 ## How to run the program
 
-How to compile (if applicable) and run the project.
+This project is hosted using GitHub Pages and can be accessed through a web browser:
 
-```bash
-cd ./client
-npm install
-npm test
-```
+### Live Site:
 
-If you wish to run the full DreamBuy application:
-```bash
-# Terminal 1 – Backend
-cd ./server
-npm install
-npm start
+[Whitney's Website](https://wbcarpenter.github.io/CSCI332Website/) 
 
-# Terminal 2 – Frontend
-cd ./client
-npm install
-npm start
-```
+No installation is required to view the main website.
+
+### Notes on Functionality
+- The HTML and CSS components are fully functional through GitHub Pages.
+- Some PHP-based labs require a local or server environment (such as XAMPP or a Linux server) to execute properly, as GitHub Pages does not support PHP.
+- When run locally with a proper server environment, all lab functionality, including PHP features, operates as intended.
 
 ## UI Design
 
-Although this project focused on testing rather than UI creation, the DreamBuy interface includes several user-facing components that were central to the test suit:
+The website follows a simple and consistent design to ensure ease of navigation and readability. A central homepage acts as a table of contents, linking to each lab and section of the site.
 
-### Product Catalog Page
+Design considerations include:
 
-Users can browse, search, filter, and add products to their cart.
-Tests validated:
-- search filtering
-- add-to-cart behavior
-- guest-user restrictions
+- Clear navigation between labs and pages
+- Consistent layout and styling across all pages
+- Logical organization of content into separate folders
+- Readable formatting and spacing for user-friendly interaction
 
-![DreamBuyUI](images/DreamBuyUI.png)  
-Fig 1. Product Catalog interface
+The structure allows users to seamlessly move between the homepage and individual lab assignments without confusion.
 
-### Cart Page
-
-Displays selected items, quantities, and pricing.
-Tests validated:
-- quantity updates
-- item removal
-- API interactions
-
-![Cart](images/Cart.jpeg)  
-Fig 2. Cart interface with item controls
-
-### Checkout Page
-
-Allows users to select shipping address and payment method.
-Tests validated:
-- form validation
-- error messages
-- order submission
-
-![Checkout](images/Checkout.jpeg)  
-Fig 3. Checkout form with validation feedback
+![Home Page](images/Website.png)  
+Fig 1. Home page of the website.
 
 ## 3. Additional Considerations
 
-As part of this project, I created a Maintenance Plan outlining how DreamBuy should be tested and maintained as new features are added. The plan identifies critical components (Cart, Login, Checkout, ProductCatalog) and specifies future tests such as:
-- Search and filter tests
-- Login error‑handling tests
-- Cart interaction tests
-- Order submission tests
+One of the primary challenges in this project was managing file paths and navigation across multiple directories, particularly when deploying the site using GitHub Pages. Ensuring that links functioned correctly between pages required a strong understanding of relative and absolute paths.
 
-The plan also recommends:
-- Running npm test regularly
-- Using Git pre‑commit hooks
-- Updating mocks and dependencies
-- Adding new tests alongside new features
+Another consideration was the limitation of GitHub Pages in supporting server-side languages like PHP. This required designing the site in a way that clearly separates static content from features that must be run in a local or server-based environment.
 
-This ensures DreamBuy remains stable and maintainable as the codebase grows.
+Overall, this project strengthened my understanding of:
+
+- Website structure and organization
+- Front-end development using HTML and CSS
+- Basic server-side programming with PHP
+- Debugging and resolving deployment issues
 
 [Back to Portfolio](/index.md)
