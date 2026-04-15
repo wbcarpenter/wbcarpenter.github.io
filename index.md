@@ -33,7 +33,9 @@ Programming Projects
 
 ### [Single Cycle Processor | CSCI 330](SCP.md)
 
-![Project 3 Thumbnail Name](images/dummy_thumbnail.jpg)
+![running the SCP testbench](/images/scp.png)  
+
+![Running ALU and Data Memory Tests](/images/testOutputs.png)
 
 ---
 

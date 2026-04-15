@@ -45,14 +45,15 @@ gcc assembler.c -o assembler
 ### 2. Run the SCP testbench
 Compile all Verilog modules:
 ```bash
-iverilog -o scp_test SCP_Test.v SCP.v InstructionMemory.v \
-DataMemory.v RegisterFile.v ALU.v ControlROM.v StatusRegister.v \ MuxTwoOne_32Bit.v MuxTwoOne_5Bit.v ProgramCounter.v \
-RippleCarryAdder.v FullAdder.v
+iverilog -o scp_test SCP_Test.v SCP.v InstructionMemory.v DataMemory.v RegisterFile.v ALU.v ControlROM.v StatusRegister.v MuxTwoOne_32Bit.v MuxTwoOne_5Bit.v ProgramCounter.v RippleCarryAdder.v FullAdder.v
 ```
 Run the simulation:
 ```bash
 vvp scp_test
 ```
+
+![Running the SCP testbench](/images/scp.png)  
+Fig 1. Running the SCP testbench
 
 ### 3. Run individual module tests
 ALU Test
@@ -66,6 +67,9 @@ Data Memory Test
 iverilog -o mem_test test_DataMemory.v DataMemory.v
 vvp mem_test
 ```
+
+![Running ALU and Data Memory Tests](/images/testOutputs.png)  
+Fig 2. Running ALU and Data Memory Tests
 
 ## UI Design
 
@@ -85,9 +89,6 @@ Example console output (simplified):
 ...
 HALT instruction encountered at PC=5
 ```
-
-![testbench output](images/testOutputs.png)  
-Fig 3. Testbench outputs
 
 ## 3. Additional Considerations
 
