@@ -1,4 +1,4 @@
-[Back to Portfolio](./)
+[Back to Portfolio](/index.md)
 
 Testing of an OpenSource GitHub Project
 ===============
@@ -42,7 +42,7 @@ npm start
 
 ## UI Design
 
-Although this project focused on testing rather than UI creation, the DreamBuy interface includes several user-facing components that were central to the test suit:
+Although this project focused on testing rather than UI creation, the DreamBuy interface includes several user-facing components that were central to the test suite:
 
 ### Product Catalog Page
 
@@ -93,4 +93,4 @@ The plan also recommends:
 
 This ensures DreamBuy remains stable and maintainable as the codebase grows.
 
-[Back to Portfolio](./)
+[Back to Portfolio](/index.md)

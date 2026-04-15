@@ -16,7 +16,7 @@ Programming Projects
 
 ### [TOCTOU Attack | CSCI 452](TOCTOUattack.md)
 
-![Project 1 Thumbnail Name](images/dummy_thumbnail.jpg)
+![Success of TOCTOU Attack](images/attackSuccess.png)
 
 ---
 

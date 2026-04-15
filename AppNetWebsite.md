@@ -1,4 +1,4 @@
-[Back to Portfolio](./)
+[Back to Portfolio](/index.md)
 
 Creation of a Website that includes information about me and several labs from the Applied Networking course.
 ===============
@@ -89,4 +89,4 @@ The plan also recommends:
 
 This ensures DreamBuy remains stable and maintainable as the codebase grows.
 
-[Back to Portfolio](./)
+[Back to Portfolio](/index.md)

@@ -1,4 +1,4 @@
-[Back to Portfolio](./index.md)
+[Back to Portfolio](/index.md)
 
 Single Cycle Processor
 ===============
@@ -95,4 +95,4 @@ Fig 3. Testbench outputs
 
 - The combination of ISA analysis, datapath integration, and systematic testing made this a strong introduction to CPU design and hardware verification.
 
-[Back to Portfolio](./)
+[Back to Portfolio](/index.md)

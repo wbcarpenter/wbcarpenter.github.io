@@ -1,96 +1,82 @@
-[Back to Portfolio](./)
+[Back to Portfolio](/index.md)
 
-Testing of an OpenSource GitHub Project
+Time-of-Check to Time-of-Use (TOCTOU) Attack
 ===============
 
 -   **Class: CSCI 452** 
 -   **Grade: A** 
--   **Language(s): C** 
--   **Source Code Repository:** [dreamBuyTest](https://github.com/wbcarpenter/dreamBuy/tree/ed4ef710dcc33af892868d6be0840108bbcf3985/client/src/pages)  
+-   **Language(s): C, Python** 
+-   **Source Code Repository:** [TOCTOU Attack Demo]()  
     (Please [email me](mailto:wbcarpenter@student.csuniv.edu?subject=GitHub%20Access) to request access.)
 
 ## Project description
 
-This project involved performing a structured software‑quality evaluation of DreamBuy, an open‑source full‑stack e‑commerce application. My role was to design and implement a comprehensive automated test suite for the frontend, ensuring that critical user flows remained stable as the project evolved.
+This project demonstrates a Time-of-Check to Time-of-Use (TOCTOU) race condition attack in a Linux environment. The goal of the project is to show how improper handling of file access—specifically separating the “check” and “use” phases—can allow an attacker to manipulate a program’s behavior.
 
-I analyzed the existing codebase, identified high‑risk components, and wrote automated tests using Jest, React Testing Library, and Axios mocks. These tests validated authentication, product browsing, cart management, and checkout functionality. I also authored a forward‑looking Maintenance Plan to ensure future features—such as wishlist, coupons, live chat, and notifications—could be added without causing regressions.
+The project consists of a vulnerable C program (checker.c) and a Python attack script (TOCTOU_attack.py). The victim program checks whether a file (secret.txt) is writable, pauses briefly, and then writes to it. During this delay, the attacker script replaces the file with a malicious file (inject), causing the victim program to unknowingly operate on the attacker-controlled file.
 
-This project demonstrates my ability to work with real-world code, design maintainable test strategies, and implement acceptance‑style tests that reflect real user behavior.
+This demonstrates a real-world class of vulnerabilities that can occur in operating systems and applications that rely on non-atomic file operations.
 
 ## How to run the program
 
-How to compile (if applicable) and run the project.
+This project must be executed inside a Linux virtual machine (Kali Linux) due to timing dependencies and system-level behavior. It is not designed to run on a host operating system.
 
+### Setup Overview
+Ensure all files are in the same directory:
+checker.c
+TOCTOU_attack.py
+secret.txt
+inject
+
+### Compile the victim program:
 ```bash
-cd ./client
-npm install
-npm test
+gcc checker.c -o checker
 ```
 
-If you wish to run the full DreamBuy application:
+### Run the attack script:
 ```bash
-# Terminal 1 – Backend
-cd ./server
-npm install
-npm start
-
-# Terminal 2 – Frontend
-cd ./client
-npm install
-npm start
+python3 TOCTOU_attack.py secret.txt stolen inject
 ```
+
+### Notes
+- The attack relies on precise timing, so results may vary slightly between runs.
+- The program demonstrates the race condition by modifying file contents during execution.
+- This should only be run in a controlled lab/VM environment for educational purposes.
 
 ## UI Design
 
-Although this project focused on testing rather than UI creation, the DreamBuy interface includes several user-facing components that were central to the test suit:
+This project does not include a traditional graphical user interface. Instead, it uses terminal-based output to demonstrate the interaction between the victim program and the attacker script.
 
-### Product Catalog Page
+The output logs clearly show:
 
-Users can browse, search, filter, and add products to their cart.
-Tests validated:
-- search filtering
-- add-to-cart behavior
-- guest-user restrictions
+- The victim’s file access attempt
+- The delay window (race condition)
+- The attacker’s file swap
+- The final result of the exploit
 
-![DreamBuyUI](images/DreamBuyUI.png)  
-Fig 1. Product Catalog interface
+### checker.c
 
-### Cart Page
+![checker.c](images/checker.png)
+![checker.c](images/checker2.png)  
+Fig 1. The checker.c program simulates a vulnerable application. It performs a file permission check and introduces a delay before using the file, creating the opportunity for exploitation.
 
-Displays selected items, quantities, and pricing.
-Tests validated:
-- quantity updates
-- item removal
-- API interactions
+### TOCTOU_attack.py
 
-![Cart](images/Cart.jpeg)  
-Fig 2. Cart interface with item controls
+![TOCTOU_attack.py](images/TOCTOU_attack.png)
+![TOCTOU_attack.py](images/TOCTOU_attack2.png)  
+Fig 2. The Python script automates the attack by monitoring the victim process and swapping files at the correct moment during execution.
 
-### Checkout Page
+### Successful Program
 
-Allows users to select shipping address and payment method.
-Tests validated:
-- form validation
-- error messages
-- order submission
-
-![Checkout](images/Checkout.jpeg)  
-Fig 3. Checkout form with validation feedback
+![Successful Attack](images/attackSuccess.png)  
+Fig 3. The output demonstrates that the attack was successful. Although the victim program reports normal operation, the contents of secret.txt are altered, showing "Hacked!", proving that the attacker was able to exploit the race condition.
 
 ## 3. Additional Considerations
 
-As part of this project, I created a Maintenance Plan outlining how DreamBuy should be tested and maintained as new features are added. The plan identifies critical components (Cart, Login, Checkout, ProductCatalog) and specifies future tests such as:
-- Search and filter tests
-- Login error‑handling tests
-- Cart interaction tests
-- Order submission tests
+This project highlights the importance of secure coding practices when working with shared resources such as files. Developers should avoid separating security checks from usage and instead rely on atomic operations to prevent race conditions.
 
-The plan also recommends:
-- Running npm test regularly
-- Using Git pre‑commit hooks
-- Updating mocks and dependencies
-- Adding new tests alongside new features
+One challenge encountered during this project was ensuring proper timing for the attack to succeed consistently. Because race conditions depend on execution timing, multiple test runs and careful tuning were required.
 
-This ensures DreamBuy remains stable and maintainable as the codebase grows.
+Additionally, this project reinforced the importance of testing software in controlled environments, as exploiting such vulnerabilities on real systems could lead to serious security risks.
 
-[Back to Portfolio](./)
+[Back to Portfolio](/index.md)
