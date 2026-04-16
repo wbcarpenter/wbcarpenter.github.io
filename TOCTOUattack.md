@@ -6,12 +6,12 @@ Time-of-Check to Time-of-Use (TOCTOU) Attack
 -   **Class: CSCI 452** 
 -   **Grade: A** 
 -   **Language(s): C, Python** 
--   **Source Code Repository:** [TOCTOU Attack Demo]()  
+-   **Source Code Repository:** [TOCTOU Attack](https://github.com/wbcarpenter/TOCTOUattack)  
     (Please [email me](mailto:wbcarpenter@student.csuniv.edu?subject=GitHub%20Access) to request access.)
 
 ## Project description
 
-This project demonstrates a Time-of-Check to Time-of-Use (TOCTOU) race condition attack in a Linux environment. The goal of the project is to show how improper handling of file access—specifically separating the “check” and “use” phases—can allow an attacker to manipulate a program’s behavior.
+This project demonstrates a Time-of-Check to Time-of-Use (TOCTOU) race condition attack in a Linux environment. The goal of the project is to show how improper handling of file access, specifically separating the “check” and “use” phases, can allow an attacker to manipulate a program’s behavior.
 
 The project consists of a vulnerable C program (checker.c) and a Python attack script (TOCTOU_attack.py). The victim program checks whether a file (secret.txt) is writable, pauses briefly, and then writes to it. During this delay, the attacker script replaces the file with a malicious file (inject), causing the victim program to unknowingly operate on the attacker-controlled file.
 
@@ -19,7 +19,7 @@ This demonstrates a real-world class of vulnerabilities that can occur in operat
 
 ## How to run the program
 
-This project must be executed inside a Linux virtual machine (Kali Linux) due to timing dependencies and system-level behavior. It is not designed to run on a host operating system.
+This project was originally executed on a Kali Linux Virtual Machine, but it also works in the Windows Command Prompt. The compiled executable for this project is available in the GitHub Releases section.
 
 ### Setup Overview
 Ensure all files are in the same directory:
