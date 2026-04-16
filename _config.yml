@@ -16,5 +16,8 @@ github_username:  wbcarpenter # update with your username
 # google_analytics: UA-000000-0 # your Google Analytics tracking ID here
 
 # Build setting
-theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal  
+  
+  
+  
 
