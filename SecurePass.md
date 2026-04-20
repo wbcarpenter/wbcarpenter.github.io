@@ -18,8 +18,10 @@
 - [7. Test Results](#7-test-results)
 - [8. Challenges Overcome](#8-challenges-overcome)
 - [9. Future Enhancements](#9-future-enhancements)
-- [10. Defense Presentation Slides](#10-defense-presentation-slides)
+- [10. Defense Presentation Slides](#10-defense-presentation-slides)  
 
+## Install SecurePass
+[link to install SecurePass](https://chromewebstore.google.com/detail/ebjocdaekpepohpaknpmbkajpfjcbjlk?utm_source=item-share-cb)  
 
 ## 1. Statement of Purpose (with the Problem Statement)
 A user-friendly extension to evaluate password strength and provide instant feedback will enhance online security and protect user privacy. Ideally, users would create strong, complex passwords adhering to the highest security standards; however, many struggle with this, opting for simple, reused passwords. This is a critical issue as weak passwords create significant security risks, including hacking attempts, data breaches, and identity theft, potentially leading to financial loss, privacy invasion, and reputational damage. According to the Verizon Data Breach Investigations Report¹, 81% of hacking-related breaches involve compromised and weak passwords. Using a user-friendly Chrome extension to evaluate password strength will significantly mitigate these risks.  Users stand to benefit substantially from this extension in the form of enhanced security and the support of their right to privacy. Weak passwords are a major security risk that can lead to significant consequences, but by developing a user-friendly Chrome extension that evaluates password strength and provides instant, local feedback, we can help users create stronger passwords, enhance their online security, and protect their privacy. This project was completed as part of an Honors Senior Project, requiring additional implementation effort, including preparing the extension for real-world deployment and meeting elevated documentation and testing standards.
