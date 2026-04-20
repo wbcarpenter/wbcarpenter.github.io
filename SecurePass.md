@@ -484,7 +484,11 @@ The deployment process introduced additional challenges, including validation re
 
 *Fig 6. The second rejection was due to the activeTab permission.*  
 
-Successfully preparing the extension for deployment demonstrates that SecurePass meets real-world application standards beyond a typical classroom project and fulfills the expectations of an Honors-level implementation.  
+Successfully preparing the extension for deployment demonstrates that SecurePass meets real-world application standards beyond a typical classroom project and fulfills the expectations of an Honors-level implementation.
+
+![Published Extension](/images/published.png)  
+
+*Fig 7. The extension was officially published in the Chrome Web Store on April 16, 2026.*  
 
 ### Flexible UI
 
