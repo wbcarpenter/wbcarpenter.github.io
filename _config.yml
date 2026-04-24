@@ -1,7 +1,7 @@
 # Site settings
 # These are used to personalize your new site.
 title: Whitney Carpenter Algorithm # your name here
-logo: "/images/UpiE.JPG?raw=true" # your photo (or logo) here
+logo: "/images/senior-headshot.JPG?raw=true" # your photo (or logo) here
 description: |
   Cybersecurity senior with hands-on experience in cybersecurity, systems, and full-stack software development.<br />
   CSCI 496: Senior Portfolio<br />
@@ -19,5 +19,5 @@ github_username:  wbcarpenter # update with your username
 theme: jekyll-theme-minimal  
   
   
-  
+
 
